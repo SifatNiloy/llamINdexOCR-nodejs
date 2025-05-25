@@ -1,8 +1,6 @@
 
 import { PDFReader } from "@llamaindex/readers/pdf";
 import { Document } from "llamaindex";
-import fs from "fs";
-import PdfParse from "pdf-parse";
 
 export const extractTextFromDocument = async (filePath: string): Promise<string> => {
   try {
