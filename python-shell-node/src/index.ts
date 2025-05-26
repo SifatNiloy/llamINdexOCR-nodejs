@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Mount router here (not multer)
 app.use("/api/ocr", ocrRoutes);
 
 const PORT = process.env.PORT || 3000;
